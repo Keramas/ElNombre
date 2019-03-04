@@ -51,25 +51,25 @@ if __name__ == "__main__":
         print "[*] Generated name list for FirstnameLastname:"
         for line in open(sys.argv[1]):
             print fullFirstLast(line)
-            sys.exit(0)
+            
 
     elif sys.argv[3] == '-2':
         print "[*] Generated name list for Firstname.Lastname:"
         for line in open(sys.argv[1]):
             print firstDotLast(line)
-            sys.exit(0)
+            
 
     elif sys.argv[3] == '-3':
         print "[*] Generated name list for Firstname_Lastname:"
         for line in open(sys.argv[1]):
             print firstUnderScoreLast(line)
-            sys.exit(0)
+            
 
     elif sys.argv[3] == '-4':
         print "[*] Generated name list for FinitialLastname:"
         for line in open(sys.argv[1]):
             print initialLast(line)
-            sys.exit(0)
+            
 
     else:
         helpText()
